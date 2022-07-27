@@ -17,7 +17,7 @@ const Left = () => {
     return (
         <LeftContainer>
             <Typography variant="h5" component="h5">POTTEPALEM RAVI</Typography>
-            <Typography variant="h6" component="h6">Full Stack Developer</Typography>
+            <Typography variant="h6" component="h6">Senior Frontend Developer</Typography>
             <p><Location className='icon' />Nellore, Andhrapradesh</p>
             <p><Phone className='icon' />+91 9493152900</p>
             <p><Email className='icon' />ravip.iiit@gmail.com</p>
@@ -45,9 +45,10 @@ const Left = () => {
                     <Awards className='icon icon2' />Honours &amp; Awards
                 </Typography>
                 <ul>
-                    <li>High School Topper</li>
                     <li>TCS - Star of the LG</li>
                     <li>TCS - Champions of ILP</li>
+                    <li>Lowe's - Individual Excellence Award</li>
+                    <li>Lowe's - Team Courage Award</li>
                 </ul>
             </section>
             <section>

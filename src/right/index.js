@@ -31,7 +31,7 @@ const Right = () => {
                     <Profile className='icon' />Profile. About Me
                 </Typography>
                 <p>
-                    Javascript Full Stack Developer with 6 years experience. 
+                    Javascript Developer with 6 years experience. 
                     Strong in design and integration, analysis and problem solving skills, 
                     data structures and algorithms, I consider myself a fast learner and a team player. 
                     I feel that can contribute to any software development department. 
