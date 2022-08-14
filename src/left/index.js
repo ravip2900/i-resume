@@ -34,6 +34,7 @@ const Left = () => {
                     <Skills className='icon icon2' />Skills
                 </Typography>
                 <ul>
+                    <li>Data Structures &amp; Algorithms</li>
                     <li>Javascript</li>
                     <li>React JS</li>
                     <li>Node JS</li>
@@ -45,6 +46,7 @@ const Left = () => {
                     <Awards className='icon icon2' />Honours &amp; Awards
                 </Typography>
                 <ul>
+                    <li>High School Topper</li>
                     <li>TCS - Star of the LG</li>
                     <li>TCS - Champions of ILP</li>
                     <li>Lowe's - Individual Excellence Award</li>
