@@ -5,7 +5,7 @@ const LeftContainer = styled(Box)`
     background-color: #034d71;
     color: white; 
     padding: 16px;
-    height: 100vh;
+    min-height: 100vh;
     section {
         margin-top: 16px;
         ul {
