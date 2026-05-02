@@ -1,0 +1,128 @@
+{
+  "profile": {
+    "name": "Lorem Ipsum Dolor",
+    "title": "Senior Software Engineer",
+    "description": "Experienced software engineer with expertise in full-stack development, cloud architecture, and team leadership. Passionate about building scalable applications and mentoring junior developers. Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore."
+  },
+  "avatar": {
+    "initials": "LI",
+    "image": "/profile.jpg",
+    "showImage": false
+  },
+  "contact": [
+    { "id": "location", "text": "Sit Amet City" },
+    { "id": "phone", "text": "+1 555 123 4567" },
+    { "id": "email", "text": "lorem.ipsum@example.com" },
+    { "id": "linkedin", "text": "linkedin.com/in/loremipsum" },
+    { "id": "github", "text": "github.com/loremipsum" },
+    { "id": "portfolio", "text": "loremipsum.dev" }
+  ],
+  "coreCompetencies": [
+    {
+      "title": "LANGUAGES",
+      "icon": "Code",
+      "skills": "JavaScript, TypeScript, Python, Java, SQL, Go"
+    },
+    {
+      "title": "FRONTEND",
+      "icon": "Monitor",
+      "skills": "React, Vue.js, Angular, Next.js, HTML5, CSS3, Tailwind CSS"
+    },
+    {
+      "title": "BACKEND",
+      "icon": "Storage",
+      "skills": "Node.js, Express, Django, Spring Boot, REST APIs, GraphQL"
+    },
+    {
+      "title": "CLOUD & DEVOPS",
+      "icon": "Cloud",
+      "skills": "AWS, Azure, GCP, Docker, Kubernetes, CI/CD, Terraform"
+    },
+    {
+      "title": "DATABASES",
+      "icon": "Storage",
+      "skills": "PostgreSQL, MongoDB, Redis, MySQL, Elasticsearch"
+    }
+  ],
+  "professionalExperience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "Dolor Sit Amet Corp",
+      "duration": "2020 - Present",
+      "responsibilities": [
+        "Led development of microservices architecture serving 1M+ users",
+        "Implemented CI/CD pipelines reducing deployment time by 60%",
+        "Mentored team of 5 junior developers",
+        "Optimized application performance improving response time by 40%",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Consectetur Adipiscing Inc",
+      "duration": "2018 - 2020",
+      "responsibilities": [
+        "Developed full-stack web applications using React and Node.js",
+        "Designed and implemented RESTful APIs",
+        "Collaborated with cross-functional teams to deliver features",
+        "Participated in code reviews and agile development processes",
+        "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia"
+      ]
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Sed Do Eiusmod LLC",
+      "duration": "2016 - 2018",
+      "responsibilities": [
+        "Built responsive web interfaces using HTML, CSS, and JavaScript",
+        "Maintained and updated existing codebase",
+        "Worked with MySQL databases and PHP backend",
+        "Provided technical support and bug fixes",
+        "Sunt in culpa qui officia deserunt mollit anim id est laborum"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Lorem Ipsum University",
+      "year": "2016"
+    }
+  ],
+  "awards": [
+    {
+      "company": "Dolor Sit Amet Corp",
+      "title": "Engineering Excellence Award",
+      "icon": "Star"
+    },
+    {
+      "company": "Consectetur Adipiscing Inc",
+      "title": "Innovation Award",
+      "icon": "EmojiEvents"
+    },
+    {
+      "company": "Lorem Ipsum University",
+      "title": "Dean's List",
+      "icon": "School"
+    }
+  ],
+  "languages": [
+    { "name": "Telugu" },
+    { "name": "English" },
+    { "name": "Hindi" }
+  ],
+  "keyProjects": [
+    {
+      "title": "E-commerce Platform",
+      "description": "Built scalable e-commerce platform handling 100K+ daily transactions with real-time inventory management. Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+    },
+    {
+      "title": "AI Chat Assistant",
+      "description": "Developed AI-powered customer service chatbot reducing support tickets by 45%. Nemo enim ipsam voluptatem quia voluptas sit aspernatur."
+    },
+    {
+      "title": "Data Analytics Dashboard",
+      "description": "Created comprehensive analytics dashboard with real-time data visualization and reporting. At vero eos et accusamus et iusto odio dignissimos."
+    }
+  ]
+}
