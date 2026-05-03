@@ -29,14 +29,13 @@ export const awardsStackStyles = {
 export const awardItemStyles = {
   display: 'flex',
   gap: 1,
-  alignItems: 'flex-start'
+  alignItems: 'center'
 };
 
 export const awardIconStyles = {
   fontSize: 24,
   flexShrink: 0,
-  alignSelf: 'flex-start',
-  marginTop: '2px'
+  alignSelf: 'center'
 };
 
 export const awardContentStyles = {};

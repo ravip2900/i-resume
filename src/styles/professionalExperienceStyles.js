@@ -75,8 +75,7 @@ export const experienceHeaderStyles = {
 
 export const titleStyles = {
   fontWeight: 700,
-  color: '#000',
-  mb: 0.5
+  color: '#000'
 };
 
 export const companyStyles = {
@@ -94,17 +93,17 @@ export const durationStyles = {
 export const techStyles = {
   color: '#000000',
   display: 'block',
-  mb: 0.5,
+  mb: 0.1,
   fontSize: '0.8rem'
 };
 
 export const responsibilitiesListStyles = {
-  py: 0.5,
+  py: 0.1,
   pl: 0
 };
 
 export const responsibilityItemStyles = {
-  py: 0.2,
+  py: 0.05,
   px: 0
 };
 

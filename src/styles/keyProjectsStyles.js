@@ -45,9 +45,22 @@ export const projectTitleStyles = {
   fontSize: '0.95rem'
 };
 
-export const projectDescriptionStyles = {
+export const projectCompanyRoleStyles = {
   color: '#000000',
-  ml: 2,
+  fontWeight: 'normal',
+  mb: 0.5,
+  fontSize: '0.85rem'
+};
+
+export const projectScopeStyles = {
+  color: '#000000',
+  mb: 0.5,
+  lineHeight: 1.6,
+  fontSize: '0.9rem'
+};
+
+export const projectImpactStyles = {
+  color: '#000000',
   mb: 0.8,
   lineHeight: 1.6,
   fontSize: '0.9rem'
@@ -57,6 +70,5 @@ export const projectTechStyles = {
   color: '#000000',
   fontWeight: 600,
   display: 'block',
-  ml: 2,
   fontSize: '0.8rem'
 };

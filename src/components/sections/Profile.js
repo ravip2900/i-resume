@@ -21,6 +21,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
+import CodeIcon from '@mui/icons-material/Code';
 
 function Profile({ data, theme }) {
   const themeColor = theme.primary;
@@ -36,7 +37,8 @@ function Profile({ data, theme }) {
     linkedin: LinkedInIcon,
     github: GitHubIcon,
     portfolio: LanguageIcon,
-    website: LanguageIcon
+    website: LanguageIcon,
+    leetcode: CodeIcon
   };
 
   return (
@@ -107,7 +109,7 @@ function Profile({ data, theme }) {
           <Stack sx={contactStackStyles} alignItems="flex-start">
             {contact.map((info) => {
               const Icon = iconMap[info.id] || LanguageIcon;
-              const isLink = info.id === 'email' || info.id === 'linkedin' || info.id === 'github' || info.id === 'portfolio' || info.id === 'website';
+              const isLink = info.id === 'email' || info.id === 'linkedin' || info.id === 'github' || info.id === 'portfolio' || info.id === 'website' || info.id === 'leetcode';
               const getHref = () => {
                 switch(info.id) {
                   case 'email':
@@ -119,6 +121,8 @@ function Profile({ data, theme }) {
                   case 'portfolio':
                   case 'website':
                     return info.text.startsWith('http') ? info.text : `https://${info.text}`;
+                  case 'leetcode':
+                    return `https://${info.text}`;
                   default:
                     return null;
                 }

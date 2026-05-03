@@ -137,12 +137,17 @@ function Resume({ template = 'modern', data, themeColors = null, theme = null })
           )}
           {data.coreCompetencies && <CoreCompetencies data={data} theme={activeTheme} />}
           
-          {data.coreCompetencies && data.professionalExperience && (
+          {/* {data.coreCompetencies && data.professionalExperience && (
             <Divider sx={{ mx: 1, my: 2, borderColor: activeTheme.primary + '20' }} />
-          )}
+          )} */}
           {data.professionalExperience && <ProfessionalExperience data={data} theme={activeTheme} />}
           
-          {(data.professionalExperience && (data.awards || data.education || data.languages)) && (
+          {data.professionalExperience && data.keyProjects && (
+            <Divider sx={{ mx: 1, my: 2, borderColor: activeTheme.primary + '20' }} />
+          )}
+          {data.keyProjects && <KeyProjects data={data} theme={activeTheme} />}
+          
+          {(data.keyProjects && (data.awards || data.education || data.languages)) && (
             <Divider sx={{ mx: 1, my: 2, borderColor: activeTheme.primary + '20' }} />
           )}
           <Grid container spacing={2} sx={bottomGridStyles}>
@@ -163,10 +168,6 @@ function Resume({ template = 'modern', data, themeColors = null, theme = null })
             )}
           </Grid>
           
-          {(data.education || data.languages || data.awards) && data.keyProjects && (
-            <Divider sx={{ mx: 1, my: 2, borderColor: activeTheme.primary + '20' }} />
-          )}
-          {data.keyProjects && <KeyProjects data={data} theme={activeTheme} />}
         </Paper>
       </Container>
     </Box>

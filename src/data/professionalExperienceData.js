@@ -9,12 +9,11 @@ export const professionalExperiences = [
     duration: 'Dec 2021 - Apr 2025',
     company: 'Lowe\'s India Pvt Ltd',
     responsibilities: [
-      'Led engineering across PDP, Account, Promotions, Rewards, Fulfillment and Returns domains.',
-      'Built micro frontend architecture using Module Federation enabling independent deployments.',
-      'Designed and implemented order modification flows for add-items, change fulfillment and returns.',
-      'Delivered reusable UI components and design systems improving development efficiency.',
-      'Developed AI agent for customer order queries using Python, Windsurf and Google ADK.',
-      'Owned accessibility, SEO, performance, monitoring, alerting and automation initiatives.'
+      'Lead post purchase user journey experiences, including order modification, cancellation, returns, and order tracking across customer facing applications.',
+      'Integrated enterprise services such as order management systems, delivery platforms, item services, recommendations, payment, fraud verification, address validation, returns, and tracking.',
+      'Created and led development of an AI order agent to help users retrieve order details, answer order related questions, and modify eligible orders.',
+      'Major contributor to the Product Detail Page experience, including gallery, fulfillment, promotions, variant display, and various page level improvements.',
+      'Contributed to the creation of a Module Federation framework and configured Jenkins deployment pipelines to support scalable micro frontend development and independent application releases.'
     ]
   },
   {
@@ -22,10 +21,7 @@ export const professionalExperiences = [
     company: 'Publicis Sapient',
     duration: 'Feb 2020 - Dec 2021',
     responsibilities: [
-      'Developed and enhanced Lowe\'s Product Detail Pages (Gallery, Compare, Fulfillment).',
-      'Improved page accessibility, SEO and overall performance.',
-      'Integrated customer facing pages with enterprise applications.',
-      'Configured CI/CD pipelines for smooth development and production releases.'
+      'Developed and enhanced Lowe’s customer facing Product Detail Pages, focusing on page improvements, SEO, accessibility, and performance.'
     ]
   },
   {
@@ -33,11 +29,12 @@ export const professionalExperiences = [
     company: 'Sneed Technologies Pvt Ltd',
     duration: 'Jan 2018 - Feb 2020',
     responsibilities: [
-      'Led the tech team and delivered end-to-end solutions from design to deployment.',
-      'Implemented Elastic Search and developed search APIs.',
-      'Implemented SEO and morphic JavaScript to improve performance.',
-      'Managed AWS EC2 environments and integrated payment, email, WhatsApp & SMS systems.',
-      'Implemented Role Based Access Control system.'
+      'Owned the complete technical function as the one person tech team for an early stage startup during the first year, involved in every stage from design to deployment, then led the engineering team in the following year.',
+      'Created a CRM website and mobile applications to manage leads, bookings, customer interactions, partner workspaces, inventories, and pricing.',
+      'Integrated payment, email, WhatsApp, and SMS communication systems to support customer transactions and engagement.',
+      'Implemented SEO and page performance improvements to enhance site discoverability, load speed, and user experience.',
+      'Implemented Elasticsearch and developed search APIs to improve search accuracy and product discovery.',
+      'Implemented a role based access control system to manage secure user permissions and application access.',
     ]
   },
   {
@@ -45,9 +42,7 @@ export const professionalExperiences = [
     company: 'Tata Consultancy Services',
     duration: 'Jan 2016 - Aug 2017',
     responsibilities: [
-      'Worked on web applications for an insurance domain.',
-      'Designed and developed web pages and REST APIs.',
-      'Supported maintenance, enhancements and production issue resolution.'
+      'Worked on internal insurance domain web applications, developing web pages and REST APIs while supporting maintenance, enhancements, and production issue resolution.'
     ]
   }
 ];

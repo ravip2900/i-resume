@@ -11,7 +11,9 @@ import {
   projectTitleContainerStyles,
   bulletIconStyles,
   projectTitleStyles,
-  projectDescriptionStyles,
+  projectCompanyRoleStyles,
+  projectScopeStyles,
+  projectImpactStyles,
   projectTechStyles
 } from '../../styles/keyProjectsStyles.js';
 
@@ -28,20 +30,28 @@ function KeyProjects({ data, theme }) {
       </Box>
 
       <Stack sx={projectsStackStyles}>
-        {keyProjects.map((project, index) => (
-          <Box key={index} sx={projectItemStyles}>
+        {keyProjects.filter(project => !project.hide).map((project, index) => (
+          <Box key={index} sx={{...projectItemStyles, pl: 0}}>
             <Box sx={projectTitleContainerStyles}>
               <Circle sx={{...bulletIconStyles, color: themeColor}} />
-              <Typography variant="subtitle2" sx={projectTitleStyles}>
-                {project.title}
-              </Typography>
+              <Box>
+                <Typography variant="subtitle2" sx={projectTitleStyles}>
+                  {project.title}
+                </Typography>
+                <Typography variant="body2" sx={projectCompanyRoleStyles}>
+                  {project.company} | {project.role}
+                </Typography>
+                <Typography variant="body2" sx={projectScopeStyles}>
+                  {project.scope}
+                </Typography>
+                <Typography variant="body2" sx={projectImpactStyles}>
+                  {project.impact}
+                </Typography>
+                <Typography variant="body2" sx={projectTechStyles}>
+                  Technologies: <span style={{fontWeight: 'normal'}}>{project.technologies?.join(', ')}</span>
+                </Typography>
+              </Box>
             </Box>
-            <Typography variant="body2" sx={projectDescriptionStyles}>
-              {project.description}
-            </Typography>
-            <Typography variant="body2" sx={projectTechStyles}>
-              {project.tech}
-            </Typography>
           </Box>
         ))}
       </Stack>

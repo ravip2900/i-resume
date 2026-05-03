@@ -7,21 +7,21 @@ export const coreCompetencies = [
   {
     title: 'FRONTEND',
     icon: 'Monitor',
-    skills: 'React, Next.js, Redux, Webpack, Module Federation, HTML, CSS'
+    skills: 'React, Next.js, Redux, Webpack, HTML, CSS'
   },
   {
     title: 'BACKEND',
     icon: 'Storage',
-    skills: 'Node.js, Spring Boot, REST APIs, GraphQL, Microservices'
+    skills: 'Node.js, Spring Boot, REST APIs, MongoDB, SQL'
   },
   {
     title: 'CLOUD & DEVOPS',
     icon: 'Cloud',
-    skills: 'AWS, GCP, Kubernetes, Jenkins, CI/CD, Docker'
+    skills: 'AWS, GCP, Kubernetes, Docker, Jenkins'
   },
   {
     title: 'AI, TOOLS & IDES',
     icon: 'Psychology',
-    skills: 'Windsurf, CodeX, Claude, Google ADK, Github Copilot, VS Code, Postman'
+    skills: 'Windsurf, CodeX, Claude, Copilot, VS Code, Google ADK'
   }
 ];

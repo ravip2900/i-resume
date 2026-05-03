@@ -36,7 +36,7 @@ export const competenciesStackStyles = {
 export const competencyItemStyles = {
   display: 'flex',
   gap: 2,
-  alignItems: 'flex-start',
+  alignItems: 'center',
   padding: '8px 0',
   borderBottom: '1px solid #f0f0f0',
   '&:last-child': {
@@ -47,8 +47,7 @@ export const competencyItemStyles = {
 export const competencyIconStyles = {
   fontSize: 20,
   flexShrink: 0,
-  alignSelf: 'flex-start',
-  marginTop: '2px'
+  alignSelf: 'center'
 };
 
 export const competencyContentStyles = {
@@ -66,7 +65,7 @@ export const competencyTitleStyles = {
   fontWeight: 600,
   color: '#333333',
   textTransform: 'uppercase',
-  fontSize: '0.9rem',
+  fontSize: '0.8rem',
   letterSpacing: '0.5px',
   width: '150px',
   flexShrink: 0
@@ -85,4 +84,22 @@ export const verticalLineStyles = {
   height: '20px',
   marginRight: '16px',
   flexShrink: 0
+};
+
+// Print styles
+export const printStyles = {
+  '@media print': {
+    competencyItemStyles: {
+      alignItems: 'center',
+      breakInside: 'avoid'
+    },
+    competencyIconStyles: {
+      alignSelf: 'center',
+      printColorAdjust: 'exact',
+      WebkitPrintColorAdjust: 'exact'
+    },
+    competencyHeaderStyles: {
+      alignItems: 'center'
+    }
+  }
 };

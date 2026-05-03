@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Stack } from '@mui/material';
-import { EmojiEvents, Star, CheckCircle } from '@mui/icons-material';
+import { EmojiEvents, Star, CheckCircle, School } from '@mui/icons-material';
 import {
   containerStyles,
   headerStyles,
@@ -20,7 +20,8 @@ function AwardsRecognition({ data, theme }) {
   const iconMap = {
     Star,
     CheckCircle,
-    EmojiEvents
+    EmojiEvents,
+    School
   };
 
   return (
@@ -43,7 +44,7 @@ function AwardsRecognition({ data, theme }) {
               <Icon sx={{...awardIconStyles, color: themeColor}} />
               <Box sx={awardContentStyles}>
                 <Typography variant="body2" sx={awardTextStyles}>
-                  {award.company} <span style={separatorStyles}>–</span> {award.title}
+                  {award.company && <>{award.company} <span style={separatorStyles}>–</span> </>}{award.title}
                 </Typography>
               </Box>
             </Box>

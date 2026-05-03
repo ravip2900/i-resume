@@ -21,7 +21,8 @@ import {
   competencyHeaderStyles,
   competencyTitleStyles,
   competencySkillsStyles,
-  verticalLineStyles
+  verticalLineStyles,
+  printStyles
 } from '../../styles/coreCompetenciesStyles.js';
 
 function CoreCompetencies({ data, theme }) {
@@ -54,11 +55,21 @@ function CoreCompetencies({ data, theme }) {
             return (
               <Box
                 key={index}
-                sx={competencyItemStyles}
+                sx={{
+                  ...competencyItemStyles,
+                  ...printStyles['@media print'].competencyItemStyles
+                }}
               >
-                <Icon sx={{...competencyIconStyles, color: themeColor}} />
+                <Icon sx={{
+                  ...competencyIconStyles, 
+                  color: themeColor,
+                  ...printStyles['@media print'].competencyIconStyles
+                }} />
                 <Box sx={competencyContentStyles}>
-                  <Box sx={competencyHeaderStyles}>
+                  <Box sx={{
+                    ...competencyHeaderStyles,
+                    ...printStyles['@media print'].competencyHeaderStyles
+                  }}>
                     <Typography 
                       variant="subtitle2" 
                       sx={competencyTitleStyles}

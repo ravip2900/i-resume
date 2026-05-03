@@ -1,5 +1,9 @@
 export const awardsData = [
   {
+    title: 'High School Topper',
+    icon: 'School'
+  },
+  {
     company: 'Lowe\'s',
     title: 'Individual Excellence Award',
     icon: 'Star'
@@ -7,16 +11,11 @@ export const awardsData = [
   {
     company: 'Lowe\'s',
     title: 'Team Courage Award',
-    icon: 'Star'
-  },
-  {
-    company: 'TCS',
-    title: 'Star of the LG',
     icon: 'CheckCircle'
   },
   {
     company: 'TCS',
-    title: 'Champions of ILP',
+    title: 'Star of the Learning Group',
     icon: 'EmojiEvents'
   }
 ];
