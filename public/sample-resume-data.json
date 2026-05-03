@@ -114,15 +114,28 @@
   "keyProjects": [
     {
       "title": "E-commerce Platform",
-      "description": "Built scalable e-commerce platform handling 100K+ daily transactions with real-time inventory management. Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+      "company": "Dolor Sit Amet Corp",
+      "role": "Lead Developer",
+      "scope": "Built scalable e-commerce platform handling 100K+ daily transactions with real-time inventory management. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
+      "impact": "Increased conversion rate by 25%, reduced cart abandonment by 30%, and achieved 99.9% uptime during peak seasons.",
+      "technologies": ["React", "Node.js", "MongoDB", "Redis", "Docker", "AWS", "Stripe"]
     },
     {
       "title": "AI Chat Assistant",
-      "description": "Developed AI-powered customer service chatbot reducing support tickets by 45%. Nemo enim ipsam voluptatem quia voluptas sit aspernatur."
+      "company": "Consectetur Adipiscing Inc",
+      "role": "Full Stack Engineer",
+      "scope": "Developed AI-powered customer service chatbot reducing support tickets by 45%. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.",
+      "impact": "Reduced customer response time from 4 hours to 2 minutes, improved customer satisfaction by 35%, and saved $500K annually in support costs.",
+      "technologies": ["Python", "TensorFlow", "FastAPI", "React", "WebSocket", "PostgreSQL"]
     },
     {
       "title": "Data Analytics Dashboard",
-      "description": "Created comprehensive analytics dashboard with real-time data visualization and reporting. At vero eos et accusamus et iusto odio dignissimos."
+      "company": "Sed Do Eiusmod LLC",
+      "role": "Frontend Developer",
+      "scope": "Created comprehensive analytics dashboard with real-time data visualization and reporting. At vero eos et accusamus et iusto odio dignissimos.",
+      "impact": "Improved decision-making speed by 50%, identified 3 new revenue streams, and reduced manual reporting time by 80%.",
+      "technologies": ["Vue.js", "D3.js", "Chart.js", "Node.js", "Express", "MySQL"],
+      "hide": false
     }
   ]
 }

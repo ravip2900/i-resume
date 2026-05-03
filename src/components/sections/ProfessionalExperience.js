@@ -7,22 +7,20 @@ import {
   headerIconStyles,
   headerTitleStyles,
   timelineContainerStyles,
-  timelineLineStyles,
   experiencesStackStyles,
   experienceItemStyles,
   timelineBulletStyles,
-  bulletInnerStyles,
   experienceContentStyles,
   experienceHeaderStyles,
   titleStyles,
-  companyStyles,
   durationStyles,
   techStyles,
   responsibilitiesListStyles,
   responsibilityItemStyles,
   responsibilityIconStyles,
   responsibilityBulletStyles,
-  responsibilityTextStyles
+  responsibilityTextStyles,
+  listItemTextStyles
 } from '../../styles/professionalExperienceStyles.js';
 
 function ProfessionalExperience({ data, theme }) {
@@ -74,13 +72,14 @@ function ProfessionalExperience({ data, theme }) {
                 </Typography>
                 <List sx={responsibilitiesListStyles}>
                   {experience.responsibilities?.map((responsibility, respIndex) => (
-                    <ListItem key={respIndex} sx={responsibilityItemStyles}>
-                      <ListItemIcon sx={responsibilityIconStyles}>
+                    <ListItem key={respIndex} sx={{...responsibilityItemStyles, display: 'flex', alignItems: 'flex-start', padding: 0}}>
+                      <ListItemIcon sx={{...responsibilityIconStyles, marginTop: '6px'}}>
                         <Circle sx={{...responsibilityBulletStyles, color: themeColor}} />
                       </ListItemIcon>
                       <ListItemText
                         primary={responsibility}
-                        primaryTypographyProps={{ variant: 'body2', sx: responsibilityTextStyles }}
+                        primaryTypographyProps={{ variant: 'body2', sx: responsibilityTextStyles}}
+                        sx={listItemTextStyles}
                       />
                     </ListItem>
                   ))}

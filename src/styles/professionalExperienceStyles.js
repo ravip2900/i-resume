@@ -40,13 +40,14 @@ export const experiencesStackStyles = {
 };
 
 export const experienceItemStyles = {
-  position: 'relative'
+  position: 'relative',
+  py: 1
 };
 
 export const timelineBulletStyles = {
   position: 'absolute',
   left: -32,
-  top: 0,
+  top: 8,
   width: 24,
   height: 24,
   borderRadius: '50%',
@@ -103,7 +104,7 @@ export const responsibilitiesListStyles = {
 };
 
 export const responsibilityItemStyles = {
-  py: 0.05,
+  py: 0.4,
   px: 0
 };
 
@@ -112,11 +113,20 @@ export const responsibilityIconStyles = {
 };
 
 export const responsibilityBulletStyles = {
-  fontSize: 6
+  fontSize: 8
 };
 
 export const responsibilityTextStyles = {
   color: '#000000',
   fontSize: '0.9rem',
   lineHeight: 1.5
+};
+
+export const listItemTextStyles = {
+  margin: 0,
+  padding: 0,
+  '& .MuiTypography-root': {
+    margin: 0,
+    padding: 0
+  }
 };
