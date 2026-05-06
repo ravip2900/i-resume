@@ -1,16 +1,13 @@
 import { useState } from 'react';
 import { 
   Box, 
-  Grid, 
   Paper, 
   Typography, 
   TextField, 
   TextareaAutosize,
-  Divider,
   IconButton
 } from '@mui/material';
 import { 
-  Person, 
   LocationOn, 
   Phone, 
   Email, 
@@ -39,7 +36,7 @@ const CoverLetter = ({ data, theme = 'modern', editable = false, onUpdate }) => 
     }
   };
 
-  const renderEditableField = (value, section, field, multiline = false, rows = 1, customStyle = {}) => {
+  const renderEditableField = (value, section, field, multiline = false, rows = 1, customStyle = {}, placeholder = '') => {
     const defaultStyle = {
       fontFamily: 'Arial, sans-serif',
       color: '#333333',
@@ -78,6 +75,7 @@ const CoverLetter = ({ data, theme = 'modern', editable = false, onUpdate }) => 
         value={value}
         onChange={(e) => handleFieldChange(section, field, e.target.value)}
         minRows={rows}
+        placeholder={placeholder}
         style={{
           width: '100%',
           border: '1px solid #333333',
@@ -104,6 +102,7 @@ const CoverLetter = ({ data, theme = 'modern', editable = false, onUpdate }) => 
         variant="outlined"
         size="small"
         fullWidth
+        placeholder={placeholder}
         sx={{ 
           '& .MuiOutlinedInput-root': {
             borderColor: '#333333',
@@ -411,18 +410,27 @@ const CoverLetter = ({ data, theme = 'modern', editable = false, onUpdate }) => 
           </Box>
           
           <Box sx={{ mb: 4 }}>
-            {localData.letterContent.body.map((paragraph, index) => (
-              <Box key={index} sx={{ mb: 3 }}>
-                {renderEditableField(
-                  paragraph, 
-                  'body', 
-                  index,
-                  true,
-                  3,
-                  currentTheme.body
-                )}
-              </Box>
-            ))}
+            {localData.letterContent.body.map((paragraph, index) => {
+              const placeholders = [
+                "Who you are + experience + current responsibilities",
+                "Technologies + key projects + technical strengths", 
+                "Why you are a good fit + what value you bring + closing"
+              ];
+              
+              return (
+                <Box key={index} sx={{ mb: 3 }}>
+                  {renderEditableField(
+                    paragraph, 
+                    'body', 
+                    index,
+                    true,
+                    3,
+                    currentTheme.body,
+                    placeholders[index] || ''
+                  )}
+                </Box>
+              );
+            })}
           </Box>
           
           <Box sx={{ mt: 6, mb: 3 }}>

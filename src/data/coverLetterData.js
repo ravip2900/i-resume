@@ -1,13 +1,13 @@
 export const coverLetterData = {
   personalInfo: {
-    name: "John Doe",
-    address: "123 Main Street, Anytown, ST 12345",
-    phone: "(123) 456-7890",
-    email: "john.doe@email.com",
-    linkedin: "linkedin.com/in/johndoe"
+    name: "Pottepalem Ravi",
+    address: "Bangalore, India",
+    phone: "+91 9493152900",
+    email: "ravip.iiit@gmail.com",
+    linkedin: "llinkedin.com/in/ravip2900"
   },
   letterContent: {
-    date: "May 6, 2026",
+    date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
     company: {
       name: "Hiring Manager",
       address: "Tech Company Inc.\n456 Corporate Blvd\nBusiness City, ST 67890"
@@ -15,11 +15,11 @@ export const coverLetterData = {
     subject: "Application for Senior Software Developer Position",
     salutation: "Dear Hiring Manager,",
     body: [
-      "I am writing to express my strong interest in the Senior Software Developer position at Tech Company Inc. With over 5 years of experience in full-stack development and a proven track record of delivering high-quality software solutions, I am confident that I possess the skills and qualifications necessary to contribute to your team's success.",
-      "Throughout my career, I have developed expertise in modern web technologies including React, Node.js, and cloud platforms. I have successfully led multiple projects from conception to deployment, consistently meeting deadlines and exceeding client expectations. My ability to collaborate effectively with cross-functional teams and adapt to rapidly changing requirements has been instrumental in my professional growth.",
-      "What particularly attracts me to Tech Company Inc. is your commitment to innovation and your reputation for developing cutting-edge solutions that address real-world challenges. I am excited about the opportunity to bring my technical skills and passion for problem-solving to an organization that shares my values and vision for the future of technology."
+      'I am excited to apply for the Senior Software Developer position. With 10 years of experience building high performance, scalable web platforms, I have developed strong expertise in full stack development, system design, technical analysis, and complex enterprise integrations. In my current role as Lead Software Engineer at Lowe’s, I lead post purchase customer journey experiences including order modification, cancellation, returns, and order tracking, while integrating with enterprise systems such as order management, delivery, payment, fraud verification, returns, and tracking services',
+      'Throughout my career, I have worked across modern frontend, backend, cloud, and DevOps technologies including React, Next.js, Redux, Node.js, Spring Boot, JavaScript, TypeScript, AWS, GCP, Kubernetes, Docker, and Jenkins. I have contributed to customer facing product experiences, performance, SEO, accessibility, scalable micro frontend architecture, and independent deployment pipelines. One of my key recent contributions was leading the development of an AI order agent that helps users retrieve order details, answer order related questions, and modify eligible orders.',
+      'I am looking for an opportunity where I can continue building scalable systems, contribute to meaningful products, and grow further toward an Architect role. I bring strong ownership, practical problem solving, and experience delivering solutions from design to deployment, including in startup environments where I owned the complete technical function. I would welcome the opportunity to discuss how my experience and skills can contribute to your team’s success.'
     ],
     closing: "Sincerely,",
-    signature: "John Doe"
+    signature: "Pottepalem Ravi"
   }
 };

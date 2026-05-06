@@ -12,7 +12,7 @@ const Hero = () => {
         Build stunning resumes in minutes with our AI-powered templates
       </Typography>
       <Typography variant="body2" sx={{ maxWidth: 600, mx: 'auto', mb: 1 }}>
-        Choose from professional templates, customize your content, and download your perfect resume. 
+        Choose from professional templates, customize your content, and print your perfect resume. 
         Stand out from the crowd with a beautifully designed resume that showcases your skills and experience.
       </Typography>
     </HeroSection>

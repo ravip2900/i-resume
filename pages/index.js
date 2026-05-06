@@ -27,7 +27,6 @@ export default function ResumeGenerator() {
     resumeJsonData,
     showPreview,
     handlePrint,
-    handleDownloadPDF,
     handleDownloadSample,
     handlePreview,
     handleBackToEdit,
